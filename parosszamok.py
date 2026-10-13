@@ -16,7 +16,7 @@ class TestPSzSzum(unittest.TestCase):
         self.assertEqual(parosSzamSzum(30, 40), 210)
 
     def test1esfel(self):
-        self.assertGreaters(parosSzamSzum(1, 4), 0)
+        self.assertGreater(parosSzamSzum(1, 4), 0)
 
     def test2(self):
         self.assertEqual(parosSzamSzum(0, 0), 0)
@@ -25,6 +25,6 @@ class TestPSzSzum(unittest.TestCase):
         self.assertIsNone(parosSzamSzum(9, -16), None)
 
     def test4(self):
-        self.assertEqual(parosSzamSzum(-22, -9), 0)
+        self.assertIsNone(parosSzamSzum(-22, -9), None)
 
 unittest.main()
